@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Somos uma agencia.">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+
+    <title>Blog da vanessa</title>
+
+    <link rel="stylesheet" href="estilos.css">
+
+</head>
+
+<body>
+    <header class="heading">
+        <div class="cabecalho">
+            <a href="#" class="logo">
+                <img src="giphy.gif" alt="Logo" class="imagem">
+                <span class="titulo">Blog da Van</span>
+            </a>
+
+            <nav class="navegacao">
+                <ul class="menu">
+                    <li class="item">
+                        <a href="#contato">Regras</a>
+                    </li>
+                    <li class="item">
+                        <a href="#contato">Sobre mim</a>
+                    </li>
+                    <li class="item pedido">
+                        <a href="#">Eventos e Jogos</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <main class="conteudo-principal" id="projetos">
+        <section class="paineis">
+            <h1 class="titulo"></h1>
+
+            <div class="imagem-painel projeto1 mostrar"></div>
+
+            <div class="imagem-painel projeto2"></div>
+
+            <div class="imagem-painel projeto3"></div>
+
+            <a href="#" id="btn-voltar" class="seta btn-voltar">Voltar</a>
+            <a href="#" id="btn-avancar" class="seta btn-avancar">Avançar</a>
+        </section>
+        <div class="espaco">
+
+
+        </div>
+        <section class="quem-somos" id="quem-somos-linha">
+
+            <div id="container">
+                <h2 id="futebolAmericano">Futebol Americano</h2>
+                <div id="teste">
+                    <div class="colunas" id="linha-tempo">
+                        <div id="linha-hover"></div>
+                        <nav>
+                            <ul>
+                                <li id="li1" onmouseover="linhaSobreLeft()" onmouseleave="limparLeft()">Sobre</li>
+                                <li id="li2" onmouseover="linhaObjetivo()" onmouseleave="limpar()">Objetivo</li>
+                                <li id="li3" onmouseover="linhaCuriosidades()" onmouseleave="limpar()">Curiosidades</li>
+                                <li id="li3" onmouseover="linhaCuriosidades()" onmouseleave="limpar()">Diferenças</li>
+
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="colunas" id="americano">
+                        <p id="linhaLeft" ></p>
+                    </div>
+                    <!-- Flag football -->
+                    <div class="colunas" id="flag">
+
+                        <div id="exibicaoLinha">
+                            <p id="linhaTempoRight"></p>
+
+                        </div>
+                    </div>
+                    <!-- Linha do tempo -->
+                    <h2 id="futebolFlag"> Flag Football</h2>
+                    
+                    <div class="colunas" id="linha-tempo">
+                        <div id="linha-hover"></div>
+                        <nav>
+                            <ul>
+                                <li id="li1" onmouseover="linhaSobre()" onmouseleave="limpar()">Sobre</li>
+                                <li id="li2" onmouseover="linhaObjetivo()" onmouseleave="limpar()">Objetivo</li>
+                                <li id="li3" onmouseover="linhaCuriosidades()" onmouseleave="limpar()">Diferenças</li>
+
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <!-- Linha do tempo -->
+
+        </section>
+        <section class="quem-somos" id="quem-somos-3">
+
+            <div class="conteudo">
+                <div class="informacoes">
+                    <h2 class="titulo">Quem somos</h2>
+                    <p class="texto">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi consequuntur commodi dignissimos
+                        officiis, hic ab fugit nesciunt. Quos adipisci eveniet sequi quo assumenda incidunt doloribus,
+                        magni, fugiat provident, et excepturi?
+                    </p>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <footer class="foot" id="contato">
+        <div class="rodape">
+            <nav class="navegacao">
+                <a href="#" class="logo">
+                    <img src="giphy.gif" alt="Logo" class="imagem">
+                    <span class="titulo">Blog da Van</span>
+                </a>
+
+                <div class="redes-sociais">
+                    <a href="quem-somos.html" class="rede-social" target="_blank">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="rede-social">
+                        <i class="fab fa-instagram-square"></i>
+                    </a>
+                    <a href="#" class="rede-social">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
+            </nav>
+        </div>
+        <p class="copyright">Todos os direitos reservados</p>
+
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js">
+    </script>
+    <script>
+        var elementoDois = document.getElementById('linhaLeft');
+        var linhaSobreLeft = function(){
+            elementoDois.innerText='O futebol americano é um esporte de conquista de território. Por isso, estratégia é fundamental. principal objetivo é simples: chegar o maior número de vezes na endzone do adversário. Quanto mais o time conseguir fazer isso, mais pontos ele somará.'
+        }
+        var elementoUm = document.getElementById('linhaTempoRight');
+        var limpar = function () {
+
+            elementoUm.innerText = ''
+        }
+        var limparLeft = function(){
+            elementoDois.innerText=' '
+        }
+        var linhaSobre = function () {
+            elementoUm.style.marginTop = '0px'
+            elementoUm.innerText = 'É uma modalidade esportiva derivada do Futebol Americano. Assim como no Futebol Americano, o objetivo no Flag Football é o mesmo: avançar a bola pelo território adversário e alcançar a zona final para marcar pontos, no caso, touchdowns.'
+        }
+        var linhaObjetivo = function () {
+            elementoUm.style.marginTop = '50px'
+            elementoUm.innerText = 'É uma modalidade esportiva derivada do Futebol Americano. Assim como no Futebol Americano, o objetivo no Flag Football é o mesmo: avançar a bola pelo território adversário e alcançar a zona final para marcar pontos, no caso, touchdowns..'
+        }
+        var linhaObjetivoLeft = function () {
+            
+            elementoDois.innerText = 'É um esporte de conquista de território onde o principal objetivo é chegar o maior número de vezes na endzone do adversário (área entre a end line e a goal line delimitada pela linha lateral. É na endzone que se marca o touchdown, e outras formas de pontuação). Quanto mais o time conseguir fazer isso, mais pontos ele somará.'
+        }
+        var linhaCuriosidades = function () {
+            elementoUm.style.marginTop = '120px'
+            elementoUm.innerText = 'A maior diferença entre o Futebol Americano e o Flag Football é todo aquele equipamento de proteção, ou no       caso, a falta dele. No Flag Football, você não precisa derrubar nematingir o adversário para parar uma jogada e impedir o avanço do adversário, basta retirar uma das fitas que os atletas usam presas na cintura. Por esse motivo, para jogar Flag Football não é necessário usar todo aquele equipamento de proteção que os atletas de Futebol Americano usam, como capacetes e “ombreiras”.'
+        }
+        
+    </script>
+</body>
+
+</html>
