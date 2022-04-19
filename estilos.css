@@ -169,7 +169,7 @@ html{
     transition: 0.5s ease-in-out;
 }
 #futebolAmericano{
-    margin-left: 3vw;
+    margin-left: 16vw;
 }
 #futebolFlag{
     margin-top: -23px;
@@ -211,7 +211,7 @@ background-color: #1ED760;
 .colunas #exibicaoLinha{
 margin-top: 2vw;
 width: 20vw;
-margin-left: 49vw;
+margin-left: 45vw;
 border-radius: 3px;
 padding: 0px;
 height: 20vh;
@@ -390,10 +390,6 @@ border-radius: 50%;
 
 /*       RODAPÉ      */
 
-
-.rodape .navegacao {
-
-}
 
 .rodape .navegacao .logo,
 .rodape .navegacao .redes-sociais{

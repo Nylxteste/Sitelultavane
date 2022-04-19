@@ -68,9 +68,8 @@
                         <nav>
                             <ul>
                                 <li id="li1" onmouseover="linhaSobreLeft()" onmouseleave="limparLeft()">Sobre</li>
-                                <li id="li2" onmouseover="linhaObjetivo()" onmouseleave="limpar()">Objetivo</li>
-                                <li id="li3" onmouseover="linhaCuriosidades()" onmouseleave="limpar()">Curiosidades</li>
-                                <li id="li3" onmouseover="linhaCuriosidades()" onmouseleave="limpar()">Diferenças</li>
+                                <li id="li2" onmouseover="linhaObjetivoLeft()" onmouseleave="limparLeft()">Objetivo</li>
+                                <li id="li3" onmouseover="linhaCuriosidadesLeft()" onmouseleave="limparLeft()">Curiosidades</li>
 
                             </ul>
                         </nav>
@@ -151,6 +150,7 @@
     <script>
         var elementoDois = document.getElementById('linhaLeft');
         var linhaSobreLeft = function(){
+            elementoDois.style.marginTop='-1vh'
             elementoDois.innerText='O futebol americano é um esporte de conquista de território. Por isso, estratégia é fundamental. principal objetivo é simples: chegar o maior número de vezes na endzone do adversário. Quanto mais o time conseguir fazer isso, mais pontos ele somará.'
         }
         var elementoUm = document.getElementById('linhaTempoRight');
@@ -169,13 +169,18 @@
             elementoUm.style.marginTop = '50px'
             elementoUm.innerText = 'É uma modalidade esportiva derivada do Futebol Americano. Assim como no Futebol Americano, o objetivo no Flag Football é o mesmo: avançar a bola pelo território adversário e alcançar a zona final para marcar pontos, no caso, touchdowns..'
         }
+        
         var linhaObjetivoLeft = function () {
-            
+            elementoDois.style.marginTop='5vh'
             elementoDois.innerText = 'É um esporte de conquista de território onde o principal objetivo é chegar o maior número de vezes na endzone do adversário (área entre a end line e a goal line delimitada pela linha lateral. É na endzone que se marca o touchdown, e outras formas de pontuação). Quanto mais o time conseguir fazer isso, mais pontos ele somará.'
         }
         var linhaCuriosidades = function () {
             elementoUm.style.marginTop = '120px'
             elementoUm.innerText = 'A maior diferença entre o Futebol Americano e o Flag Football é todo aquele equipamento de proteção, ou no       caso, a falta dele. No Flag Football, você não precisa derrubar nematingir o adversário para parar uma jogada e impedir o avanço do adversário, basta retirar uma das fitas que os atletas usam presas na cintura. Por esse motivo, para jogar Flag Football não é necessário usar todo aquele equipamento de proteção que os atletas de Futebol Americano usam, como capacetes e “ombreiras”.'
+        }
+        var linhaCuriosidadesLeft = function () {
+            elementoDois.style.marginTop = '120px'
+            elementoDois.innerText = 'A maior diferença entre o Futebol Americano e o Flag Football é todo aquele equipamento de proteção, ou no       caso, a falta dele. No Flag Football, você não precisa derrubar nematingir o adversário para parar uma jogada e impedir o avanço do adversário, basta retirar uma das fitas que os atletas usam presas na cintura. Por esse motivo, para jogar Flag Football não é necessário usar todo aquele equipamento de proteção que os atletas de Futebol Americano usam, como capacetes e “ombreiras”.'
         }
         
     </script>
